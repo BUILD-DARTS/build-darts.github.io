@@ -2,53 +2,74 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUILD DARTS | Official</title>
     <style>
+        /* ВСЕ ТВОИ СТИЛИ ТЕПЕРЬ ТУТ */
         body {
-            background-color: #0d0d0d; /* Глубокий черный цвет */
-            color: #ff0000;            /* Фирменный красный */
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
-            padding-top: 80px;
+            background-color: #000; /* Глубокий черный фон */
+            color: #ff0000;         /* Твой фирменный красный */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
         }
 
-        /* Настройка твоего логотипа */
+        /* Настройка твоего логотипа logo.png */
         .main-logo {
-            width: 350px;              /* Размер логотипа */
+            width: 320px;
             height: auto;
-            /* Эффект свечения, как на твоих обоях */
-            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6));
-            margin-bottom: 30px;
-            transition: 0.3s;          /* Плавность при наведении */
+            /* Эффект красного неона вокруг логотипа */
+            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.7));
+            transition: 0.5s ease;
+            cursor: pointer;
         }
 
+        /* Логотип будет плавно увеличиваться при наведении */
         .main-logo:hover {
-            transform: scale(1.05);    /* Логотип чуть увеличится при наведении */
-            filter: drop-shadow(0 0 35px rgba(255, 0, 0, 0.9));
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 45px rgba(255, 0, 0, 1));
         }
 
         h1 {
-            font-size: 3.5em;
-            letter-spacing: 10px;
+            font-size: 4em;
+            letter-spacing: 12px; /* Широкие буквы для стиля */
+            margin: 20px 0 10px 0;
             text-transform: uppercase;
-            margin: 0;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
         }
 
-        p {
-            color: #444;
-            letter-spacing: 3px;
-            margin-top: 15px;
+        .tagline {
+            color: #444; /* Темно-серый для контраста */
+            font-size: 1.1em;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Небольшая анимация "биения сердца" для текста */
+        @keyframes pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        .loading {
+            animation: pulse 2s infinite;
         }
     </style>
 </head>
 <body>
 
-    <!-- ТВОЙ ФАЙЛ ЛОГОТИПА -->
+    <!-- ТВОЙ ЛОГОТИП (Файл logo.png должен лежать рядом в GitHub) -->
     <img src="logo.png" alt="Build Darts Logo" class="main-logo">
 
     <h1>BUILD DARTS</h1>
-    <p>SYSTEM LOADING...</p>
+    <p class="tagline loading">System Online | Loading Assets...</p>
 
 </body>
 </html>
