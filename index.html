@@ -2,65 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUILD DARTS | Official</title>
     <style>
-        /* Общие настройки страницы */
         body {
-            background-color: #0d0d0d; /* Глубокий черный */
-            color: #ff0000;            /* Ярко-красный */
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d0d0d; /* Глубокий черный цвет */
+            color: #ff0000;            /* Фирменный красный */
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 80px;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
         }
 
-        /* Стиль для твоего логотипа из папки изображений */
+        /* Настройка твоего логотипа */
         .main-logo {
-            width: 320px;              /* Ширина логотипа */
+            width: 350px;              /* Размер логотипа */
             height: auto;
-            border-radius: 20px;       /* Скругление углов */
-            border: 2px solid #ff0000; /* Тонкая красная рамка */
-            
-            /* Эффект пульсирующего красного свечения (как на твоих обоях) */
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Эффект свечения, как на твоих обоях */
+            filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6));
             margin-bottom: 30px;
+            transition: 0.3s;          /* Плавность при наведении */
         }
 
-        /* Эффект при наведении мышкой */
         .main-logo:hover {
-            transform: scale(1.05);    /* Лого слегка увеличится */
-            box-shadow: 0 0 50px rgba(255, 0, 0, 0.8);
+            transform: scale(1.05);    /* Логотип чуть увеличится при наведении */
+            filter: drop-shadow(0 0 35px rgba(255, 0, 0, 0.9));
         }
 
         h1 {
-            font-size: 4em;
-            letter-spacing: 10px;      /* Растянутые буквы для стиля */
+            font-size: 3.5em;
+            letter-spacing: 10px;
             text-transform: uppercase;
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
         }
 
-        .tagline {
-            color: #444;               /* Темно-серый текст */
-            font-size: 1.2em;
+        p {
+            color: #444;
+            letter-spacing: 3px;
             margin-top: 15px;
-            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <!-- ВАЖНО: убедись, что файл MY-FILE лежит в одной папке с этим кодом -->
-    <img src="MY-FILE" alt="Build Darts Logo" class="main-logo">
+    <!-- ТВОЙ ФАЙЛ ЛОГОТИПА -->
+    <img src="logo.png" alt="Build Darts Logo" class="main-logo">
 
     <h1>BUILD DARTS</h1>
-    <p class="tagline">LOADING SYSTEM... PLEASE WAIT</p>
+    <p>SYSTEM LOADING...</p>
 
 </body>
 </html>
